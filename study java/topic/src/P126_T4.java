@@ -14,5 +14,6 @@ public class P126_T4 {
 
     public static void main(String[]args){
         System.out.println(countLetters("Beijing 2022"));
+
     }
 }
