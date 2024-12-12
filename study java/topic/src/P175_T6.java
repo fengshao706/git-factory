@@ -6,7 +6,7 @@ public class P175_T6 {
         String[] splitBirthday=birthday.split("-");//将输入的字符串进行分割
         int year=Integer.parseInt(splitBirthday[0]);
         int month=Integer.parseInt(splitBirthday[1]);//提取年月日
-        int day=Integer.parseInt(splitBirthday[2]);//Integer.parseInt可以将字符串类型转换为int类型
+        int day=Integer.parseInt(splitBirthday[2]);
         var birth=LocalDate.of(year,month,day);//转换为LocalDate数据类型
         var today=LocalDate.now();
         long goThrough=today.toEpochDay()-birth.toEpochDay();//这个方法可以直接计算经过的日期
