@@ -7,7 +7,7 @@ public class P175_T6 {
         int year=Integer.parseInt(splitBirthday[0]);
         int month=Integer.parseInt(splitBirthday[1]);//提取年月日
         int day=Integer.parseInt(splitBirthday[2]);
-        var birth=LocalDate.of(year,month,day);//转换为LocalDate数据类型
+        var birth=LocalDate.of(year,month,day);//转为LocalDate数据类型
         var today=LocalDate.now();
         long goThrough=today.toEpochDay()-birth.toEpochDay();//这个方法可以直接计算经过的日期
         System.out.println("今天距离你的出生日有"+goThrough+"天");
